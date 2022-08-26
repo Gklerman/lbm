@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LBM - Liga de Básquetbol de Maldonado</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header start -->
+    <header>
+        <!-- Nav start -->
+        <nav>
+            <a href="index.html"><img src="images/logo.fw.png" class="navLogo" alt="Logo Liga Básquetbol de Maldonado"></a>
+            <ul>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="fixture.html">Fixture</a></li>
+                <li><a href="equipos.html">Equipos</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="contacto.html" id="enlaceNav">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Nav end -->
+    </header>
+    <!-- Header end -->
+
+    <!-- Container start -->
+    <div id="container">
+        <!-- Section start -->
+        <section>
+            <div class="titularNoticias">
+                <h1>Contacto</h1>
+            </div>
+            <!-- Form start -->
+            <form>
+                <div class="formInfo">   
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id ="nombre" name="nombre" class="formControl" placeholder="Nombre" /><br><br>
+                </div>
+                <div class="formInfo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" class="formControl" placeholder="Apellido" /><br><br>
+                </div>
+                <div class="formInfo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="formControl" placeholder="Introduce tu e-mail" /><br><br>
+                </div>
+                <div class="formInfo">
+                    <label for="estadoCivil">Estado civil</label>
+                    <select id ="estadoCivil" name="estadoCivil" class="formControl">
+                        <option value="solteroA">Soltero/a</option>
+                        <option value="casadoA">Casado/a</option>
+                    </select>
+                </div>
+                <div class="formInfo">
+                    <label>¿Desea recibir el Newsletter?<input type="checkbox" class="inputCheckbox" /></label>
+                </div>
+                <div class="formInfo">
+                    <label for="mensaje">Escríbenos!</label>
+                    <textarea id="mensaje" name="mensaje" class="inputTextarea" placeholder="Déjanos tu mensaje y nos comunicaremos a la brevedad..." rows="4" cols="50"></textarea><br>
+                </div>
+                <div class="formInfo">
+                    <button type="reset" value="Limpiar formulario">Limpiar Formulario</button>
+                </div>
+                <div class="formInfo">
+                    <button type="submit" value="Enviar formulario">Enviar</button>
+                </div>
+            </form>
+            <!-- Too many br´s, I know I know... ;) -->
+            <!-- Form end -->
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26176.18059355309!2d-54.98119661753965!3d-34.90588299966101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95751a97c925fab1%3A0x4c3ae595519715fd!2s20000%20Maldonado%2C%20Departamento%20de%20Maldonado!5e0!3m2!1ses-419!2suy!4v1659764957811!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </section>
+        <!-- Section end -->
+    </div>
+    <!-- Container end -->
+
+    <!-- Footer start -->
+    <footer>
+        <p>Copyright &copy; LBM.COM, 2000-2022</p>
+    </footer>
+    <!-- Footer end -->
+</body>
+</html>
