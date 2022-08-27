@@ -7,9 +7,6 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-/*img {
-    width: 100%;
-}*/
 
 /* --- HTML --- */
 html {
@@ -21,6 +18,9 @@ body {
     background-color: #EEEEEE;
 }
 
+img {
+    width: 100%;
+}
 
 /* --- HEADER --- */
 header {
@@ -63,80 +63,104 @@ nav ul li a:hover {
     color: #E88D0B;
 }
 
-/* --- DIV CONTAINER --- */
+/* --- SECTION CONTAINER --- */
 #container {
-    width: 50%;
-    margin: 0 auto;
-    /*border: 1px solid #000;
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FFF;
+    padding-top: 20px;
+}
+.noticiaPrincipal {
+    width: 640px;
+}
+.noticiaPrincipal p {
+    font-size: 1.5rem;
+    padding: 5px 5px 20px 5px;
+}
+.noticiaSecundaria {
+    height: 355px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;*/
 }
-
-/* --- SECTION --- */
-/*section {
-    width: 80%;
+.noticiaArticle {
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nsTexto {
+    width: 370px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+#secondContainer {
+    width: 1200px;
     margin: 0 auto;
-}*/
-.contNoticias {
-    margin-bottom: 20px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+#secondSection {
+    padding-bottom: 10px;
 }
 .titularNoticias {
-    margin: 20px 0 0 10px;
-    border-bottom: 1px solid #CCC;
+    width: 850px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
 .titularNoticias h1 {
     padding: 5px;
     font-size: 3rem;
     font-weight: 700;
 }
-.noticiaPrincipal {
-    margin-top: 10px;
-    /*display: flex;
-    flex-direction: column;*/
+.noticia {
+    height: 221px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #fff;
 }
-.noticiaPrincipal p {
-    width: 640px;
+.noticiaTxt {
+    width: 550px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     font-size: 1.5rem;
-    padding-left: 5px;
 }
-.noticiaSecundaria {
-    width: 300px;
-    margin: 10px 0 0 10px;
-    /*display: flex;
-    flex-direction: column;*/
-    /*border: 1px solid #000;*/
-}
-.noticiaSecundaria img {
-    width: 118px;
-    height: 94px;
-    padding: 5px;
-}
-.noticiaSecundaria {
-    font-size: 1.5rem;
-    padding-top: 5px;
-}
-.noticiaSecundaria p {
-    font-size: 1.4rem;
-    padding: 0 5px 5px 0;
+.noticiaTxt p {
+    padding-top: 10px;
 }
 
 /* --- SECTION FIXTURE.HTML --- */
 #fixture {
     width: 100%;
-    margin: 10px 0;
     padding-bottom: 10px;
     /*border: 1px solid #000;*/
     display: flex;
     flex-direction: column;
 }
+.titularFixture {
+    width: 1200px;
+
+    border-bottom: 1px solid #ccc;
+}
+.titularFixture h1 {
+    padding: 5px;
+    font-size: 3rem;
+    font-weight: 700;
+}
 span {
     color: #E88D0B;
 }
 .info {
-    width: 96%;
-    margin: 10px;
+    width: 100%;
+    margin: 10px 0;
     /*border: 1px solid #000;*/
     display: flex;
     justify-content: space-between;
@@ -149,8 +173,7 @@ span {
     }
 
 .fixtureData {
-    width: 98%;
-    margin-left: 10px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -159,31 +182,39 @@ span {
 }
 
 /* --- SECTION EQUIPOS.HTML --- */
+#equipos {
+    width: 1200px;   
+}
+.titularEquipos {
+    width: 1200px;
+    border-bottom: 1px solid #ccc;
+}
+.titularEquipos h1 {
+    padding: 5px;
+    font-size: 3rem;
+    font-weight: 700;
+}
 .infoEquipos {
-    width: 98%;
-    margin: 0 10px;
-    font-size: 1.5rem;
+    margin-top: 10px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    /*border: 1px solid #ccc;*/
+    justify-content: center;
+    font-size: 1.5rem;
 }
 .card {
     width: 300px;
     height: 300px;
-    margin: 10px 0;
+    margin: 10px 0 10px 10px;
     border: 1px solid #ccc;
 }
-.card img {
-    margin: 10px 10px 0 10px; 
+.cardImg {
+    margin: 10px; 
 }
 .cardInfo {
     width: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 10px;
+    text-align: center;
     /*border: 1px solid #ccc;*/
 }
 
@@ -288,48 +319,51 @@ textarea:focus {
     margin: 20px 0 20px 20px;
 }
 
-/* --- ARTICLE --- */
-article.noticia {
-    width: 850px;
-    margin: 10px auto;
-    /*display: flex;
-    align-items:stretch;*/
-    border: 1px solid #CCC;
-    background-color: #FFF;
-}
-article.noticia h2 {
-    font-size: 2.5rem;
-    padding: 10px 0 0 10px;
-}
-article.noticia p {
-    font-size: 1.5rem;
-    padding: 10px;
-}
-
 /* --- ASIDE --- */
-aside {
-    width: 200px;
-    margin: 0 auto;
-    padding-bottom: 10px;
-    /*display: flex;
+#columnDer {
+    width: 350px;
+    margin: 60px 0 10px 10px;
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;*/
+    /*border: 1px solid #000;
+    background-color: #fff;*/
+    font-size: 1.5rem;
 }
-aside h3 {
-    font-size: 2.1rem;
+.resultados, .redesSociales, .posiciones {
+    width: 350px;
+    background-color: #FFF;
+    margin-bottom: 10px;
+    /*border: 1px solid #CCC;*/
 }
-.resultadosFecha, .redesSociales, .tablaPosiciones {
-    width: 300px;
-    border: 1px solid #CCC;
+.redesSociales {
+    text-align: center;
 }
-.fa-facebook, .fa-twitter {
-    font-size: 2rem;
+.rsTitulo {
+    height: 40px;
+    background-color: #00488C;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rsColor {
+    background-color: #E88D0B;
+    color: #00488C;
+}
+.fa-facebook-official, .fa-twitter {
+    font-size: 30px;
     color: #CCC;
     text-decoration: none;
     padding: 5px;
 }
-.fa-facebook:hover, .fa-twitter:hover {
+.fa-facebook-official:hover, .fa-twitter:hover {
     color: #00488C;
+}
+
+/* --- DIV EMPTY --- */
+#empty {
+    width: 100%;
+    height: 100px;
 }
 
 /* --- FOOTER --- */
@@ -337,10 +371,12 @@ footer {
     width: 100%;
     height: 80px;
     background-color: #00488C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 footer p {
     color: #CCC;
     font-size: 1.5rem;
-    padding-top: 20px;
-    text-align: center;
 }
