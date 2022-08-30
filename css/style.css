@@ -17,26 +17,47 @@ html {
 body {
     background-color: #EEEEEE;
 }
-
 img {
     width: 100%;
+}
+
+/*--- GRID TEMPLATE --- */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas:
+    "header header header header"
+    ". section aside ."
+    "footer footer footer footer";
+    gap: 10px;
+}
+#header {
+    grid-area: header;
+}
+#secondSection {
+    grid-area: section;
+}
+#columnDer {
+    grid-area: aside;
+}
+#footer {
+    grid-area: footer;
 }
 
 /* --- HEADER --- */
 header {
     width: 100%;
-    background-color: #000;
     background-image: url(../images/fondo-mosaico.jpg);
+    background-repeat: repeat-x;
 }
 .headerImg {
     width: 1024px;
     margin: 10px auto;
-    padding-bottom: 10px;
 }
 
 /* --- NAV --- */
 nav {
-    height: 70px;
     padding: 10px 50px;
     background-color: #00488C;
     display: flex;
@@ -66,22 +87,28 @@ nav ul li a:hover {
 /* --- SECTION CONTAINER --- */
 #container {
     width: 100%;
-    margin: 10px auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #FFF;
-    padding-top: 20px;
+    border-bottom: 2px solid #DDD;
+}
+#secondSection {
+    max-width: 850px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .noticiaPrincipal {
-    width: 640px;
+    max-width: 640px;
 }
 .noticiaPrincipal p {
     font-size: 1.5rem;
     padding: 5px 5px 20px 5px;
 }
 .noticiaSecundaria {
-    height: 355px;
+    max-height: 355px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,24 +119,21 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 .nsTexto {
-    width: 370px;
+    max-width: 370px;
     margin: 5px;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
 }
 #secondContainer {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-top: 15px;
     display: flex;
     flex-direction: row;
 }
-#secondSection {
-    padding-bottom: 10px;
-}
 .titularNoticias {
-    width: 850px;
+    max-width: 850px;
     margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
 }
@@ -119,7 +143,7 @@ nav ul li a:hover {
     font-weight: 700;
 }
 .noticia {
-    height: 221px;
+    max-height: 221px;
     margin-bottom: 10px;
     display: flex;
     flex-wrap: nowrap;
@@ -146,8 +170,7 @@ nav ul li a:hover {
     flex-direction: column;
 }
 .titularFixture {
-    width: 1200px;
-
+    width: 100%;
     border-bottom: 1px solid #ccc;
 }
 .titularFixture h1 {
@@ -183,10 +206,10 @@ span {
 
 /* --- SECTION EQUIPOS.HTML --- */
 #equipos {
-    width: 1200px;   
+    width: 100%;   
 }
 .titularEquipos {
-    width: 1200px;
+    max-width: 1200px;
     border-bottom: 1px solid #ccc;
 }
 .titularEquipos h1 {
@@ -219,25 +242,81 @@ span {
 }
 
 /* --- SECTION HISTORIA.HTML --- */
-.textoHistoria {
-    font-size: 1.8rem;
+.titularHistoria {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
 }
-.textoHistoria p {
-    padding: 10px 10px 10px 20px;
+.titularHistoria h1 {
+    padding: 5px;
+    font-size: 3rem;
+    font-weight: 700;
 }
 .titularHistoria h2 {
+    width: 100%;
     font-size: 2.5rem;
     margin: 20px 0 0 10px;
-    border-bottom: 1px solid #CCC;
+}
+.textoHistoria p {
+    font-size: 1.8rem;
+    padding: 10px 10px 10px 20px;
+}
+.autoridades {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cardAutoridades {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 20px;
+    font-size: 1.6rem;   
 }
 
-/* --- SECTION AUTORIDADES.HTML --- */
-.cardAutoridades {
-    padding: 10px 10px 10px 20px;    
+/* --- GALERIA --- */
+/*.galeria {
+    width: 100%;
+    margin: 20px 0;
+}*/
+.galeria {
+    width: 100%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,300px);
+    grid-template-areas: 
+    "staples staples juez comu"
+    "tiro balones juez league";
+    gap: 10px;
 }
-.cardAutoridades p {
-    font-size: 1.8rem;    
+.staples {
+    grid-area: staples;
 }
+.juez {
+    grid-area: juez;
+}
+.comunidad {
+    grid-area: comu;
+}
+.tiro {
+    grid-area: tiro;
+}
+.balones {
+    grid-area: balones;
+}
+.league {
+    grid-area: league;
+}
+.galeria img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1)
+}
+.galeria img:hover {
+    filter: none;
+}
+
 
 /* --- FORMULARIO CONTACTO.HTML --- */
 .formInfo {
@@ -321,16 +400,13 @@ textarea:focus {
 
 /* --- ASIDE --- */
 #columnDer {
-    width: 350px;
-    margin: 60px 0 10px 10px;
+    width: 100%;
+    margin: 70px 0 10px 10px;
     display: flex;
     flex-direction: column;
-    /*border: 1px solid #000;
-    background-color: #fff;*/
     font-size: 1.5rem;
 }
 .resultados, .redesSociales, .posiciones {
-    width: 350px;
     background-color: #FFF;
     margin-bottom: 10px;
     /*border: 1px solid #CCC;*/
@@ -379,4 +455,37 @@ footer {
 footer p {
     color: #CCC;
     font-size: 1.5rem;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1200px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "section"
+        "aside"
+        "footer";
+    }
+    .headerImg {
+        display: block;
+        max-width: 100%;
+    }
+    /*nav {
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: flex-start;
+    }*/
+   /*#container {
+        flex-direction: row;
+    }*/
+    /*.headerImg img {
+        height: auto;
+        max-width: 100%;
+    }*/
+    #columnDer {
+        margin: 0;
+        text-align: left;
+    }
+
 }
