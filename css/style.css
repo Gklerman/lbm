@@ -27,8 +27,8 @@ img {
 }
 
 /*--- GRID TEMPLATE --- */
-.container {
-    display: grid;
+.containerIndex {
+    display: grid !important;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,auto);
     grid-template-areas:
@@ -56,26 +56,22 @@ header {
     background-image: url(../images/fondo-mosaico.jpg);
     background-repeat: repeat-x;
 }
-.headerImg {
+/*.headerImg {
     width: 1024px;
     margin: 10px auto;
-}
+}*/
 
 /* --- NAV --- */
 nav {
-    padding: 10px 50px;
     background-color: #00488C;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-nav ul {
+/*nav ul {
     display: flex;
     list-style: none;
-}
+}*/
 nav ul li {
-    margin: 5px;
-    padding: 5px;
+    /*margin: 5px;
+    padding: 5px;*/
     font-size: 2rem;
 }
 nav ul li a {
@@ -88,10 +84,37 @@ nav ul li a:hover {
 #enlaceNav {
     color: #E88D0B;
 }
+.btn-menu {
+    background-color: #FFF;
+    border-color: #FFF;
+    font-size: 25px;
+}
+
+/* --- CAROUSEL --- */
+.carouselContainer {
+    width: 1024px;
+    height: 566px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+.carousel-indicators {
+    margin: 0 auto;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 80px;
+    width: 80px;
+    background-size: 100%, 100%;
+}
 
 /* --- SECTION CONTAINER --- */
 #container {
-    width: 100%;
+    width: 100%; 
     margin: 20px auto;
     display: flex;
     flex-direction: row;
