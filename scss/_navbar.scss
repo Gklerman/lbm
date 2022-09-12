@@ -1,0 +1,27 @@
+
+// NAVBAR
+
+/* --- NAV --- */
+
+nav {
+    background-color: #00488C;
+    li {
+        font-size: $textXl;
+        a {
+            text-decoration: none;
+            color: $keyColor;
+            &:hover {
+                color: $secondaryColor;    
+            }    
+        }   
+    }   
+}
+
+#enlaceNav {
+    color: $secondaryColor;
+}
+.btn-menu {
+    background-color: $keyColor;
+    border-color: $keyColor;
+    font-size: 25px;
+}
