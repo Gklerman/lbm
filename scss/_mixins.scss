@@ -1,0 +1,37 @@
+//EXTENDS
+.posiciones {
+    text-align: center;
+    box-shadow: 2px 2px 3px $shadowColor;
+}
+.resultados, .redesSociales {
+    @extend .posiciones;
+    background-color: $keyColor;
+}
+
+.cardImg {
+    margin: 10px;
+}
+.cardInfo {
+    @extend .cardImg;
+    width: 280px;
+    text-align: center;
+}
+
+//MIXINS
+@mixin flex($fDirection,$jContent,$wrap) {
+    display: flex;
+    flex-direction: $fDirection;
+    justify-content: $jContent;
+    flex-wrap: $fWrap;
+}
+
+@mixin font($fontSize,$fontWeight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}
+
+@mixin color($backgColor,$color) {
+    background-color: $backgColor;
+    color: $color;
+}
+

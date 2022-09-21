@@ -1,11 +1,10 @@
 /* --- GOOGLE FONTS --- */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;700&display=swap");
-/* --- NAV --- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;700&display=swap"); /* --- NAV --- */
 nav {
   background-color: #00488C;
 }
 nav li {
-  font-size: 2rem;
+  font-size: 2em;
 }
 nav li a {
   text-decoration: none;
@@ -25,12 +24,35 @@ nav li a:hover {
   font-size: 25px;
 }
 
+.posiciones, .resultados, .redesSociales {
+  text-align: center;
+  box-shadow: 2px 2px 3px #888;
+}
+
+.resultados, .redesSociales {
+  background-color: #FFF;
+}
+
+.cardImg, .cardInfo {
+  margin: 10px;
+}
+
+.cardInfo {
+  width: 280px;
+  text-align: center;
+}
+
 /* --- RESET --- */
 * {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+}
+
+/* --- VARIABLES --- */
+:root {
+  --animation-duration: 1s;
 }
 
 /* --- HTML --- */
@@ -47,15 +69,52 @@ img {
   width: 100%;
 }
 
-#secondContainer {
-  max-width: 1200px;
+/* --- CAROUSEL --- */
+.carouselContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-indicators {
   margin: 0 auto;
-  padding-top: 15px;
-  display: flex;
-  flex-direction: row;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 70px;
+  width: 70px;
+  background-size: 100%, 100%;
 }
 
 /* --- SECTION --- */
+.titularNoticias {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #CCC;
+}
+.titularNoticias h1 {
+  padding: 5px;
+  font-size: 3.5em;
+  font-weight: 700;
+}
+
+article {
+  box-shadow: 2px 2px 3px #888888;
+}
+article h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+article p {
+  font-size: 1.8em;
+}
+
 #equipos {
   width: 100%;
 }
@@ -66,35 +125,179 @@ img {
 }
 .titularEquipos h1 {
   padding: 5px;
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 700;
 }
 
 .infoEquipos {
-  margin-top: 10px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
-  font-size: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 1.5em;
 }
 
-.card {
+#secondContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cardEquipo {
   width: 300px;
+  height: auto;
   margin: 10px 0 10px 10px;
   border: 1px solid #CCC;
 }
-.card .cardImg {
-  margin: 10px;
-}
-.card .cardInfo {
-  width: 280px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+
+/* --- ASIDE --- */
+aside h3 {
+  font-size: 2em;
+  font-weight: 600;
 }
 
+.rsTitulo {
+  height: 40px;
+  padding-top: 5px;
+  background-color: #00488C;
+  color: #FFF;
+}
+
+.rsColor {
+  background-color: #E88D0B;
+  color: #FFF;
+}
+
+.rowColor {
+  background-color: #FFF;
+}
+
+.posRow {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.fa-facebook-official, .fa-twitter {
+  font-size: 30px;
+  color: #CCC;
+  text-decoration: none;
+  padding: 5px;
+}
+.fa-facebook-official:hover, .fa-twitter:hover {
+  color: #00488C;
+}
+
+/* --- ANIMACION --- */
+.ballContainer {
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-color: #00488C;
+  box-shadow: 2px 2px 3px #888;
+}
+
+.rebote {
+  -webkit-animation-name: rebote;
+          animation-name: rebote;
+  -webkit-animation-duration: var(--animation-duration);
+          animation-duration: var(--animation-duration);
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  transform-origin: bottom;
+}
+
+.sombra, .rotateImg {
+  border-radius: 50%;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+}
+
+.sombra {
+  margin-top: 230px;
+  -webkit-animation-name: sombra;
+          animation-name: sombra;
+  -webkit-animation-duration: var(--animation-duration);
+          animation-duration: var(--animation-duration);
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.rotateImg {
+  background-image: url(../images/ball.fw.png);
+  background-size: 100%;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: calc(var(--animation-duration) * 5.3);
+          animation-duration: calc(var(--animation-duration) * 5.3);
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes sombra {
+  0% {
+    transform: translateY(0);
+    box-shadow: 5px 5px 10px #000;
+  }
+  100% {
+    transform: translateY(-220px);
+    box-shadow: 10px 55px 55px #444466;
+  }
+}
+
+@keyframes sombra {
+  0% {
+    transform: translateY(0);
+    box-shadow: 5px 5px 10px #000;
+  }
+  100% {
+    transform: translateY(-220px);
+    box-shadow: 10px 55px 55px #444466;
+  }
+}
+@-webkit-keyframes rebote {
+  0% {
+    transform: scaleY(0.7);
+  }
+  15% {
+    transform: scaleY(1);
+  }
+}
+@keyframes rebote {
+  0% {
+    transform: scaleY(0.7);
+  }
+  15% {
+    transform: scaleY(1);
+  }
+}
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* --- DIV EMPTY --- */
 #empty {
   width: 100%;
@@ -102,15 +305,57 @@ img {
 }
 
 /* --- FOOTER --- */
-footer {
-  width: 100%;
+.footer {
   height: 80px;
   background-color: #00488C;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-footer p {
+.footer p {
   color: #CCC;
-  font-size: 1.5rem;
+  font-size: 1.5em;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+  h2.card-title {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  p.card-text {
+    font-size: 1.3em;
+  }
+  .card-body {
+    padding: 3px;
+  }
+}
+@media (min-width: 992px) {
+  .posRow {
+    font-size: 1.5em;
+  }
+  aside h3 {
+    font-size: 1.8em;
+  }
+  h2.card-title {
+    font-size: 1.8em;
+    font-weight: 700;
+  }
+  p.card-text {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 1200px) {
+  .posRow {
+    font-size: 1.5em;
+  }
+  h2.card-title {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+  p.card-text {
+    font-size: 1.6em;
+  }
+}
+@media (max-width: 1200px) {
+  h3.rsTitulo {
+    font-size: 1.8em;
+  }
 }/*# sourceMappingURL=main.css.map */

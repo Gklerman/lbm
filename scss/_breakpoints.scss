@@ -1,0 +1,46 @@
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+    h2.card-title {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    p.card-text {
+        font-size: 1.3em;
+    }
+    .card-body {
+        padding: 3px;
+    }  
+}
+@media (min-width: 992px) {
+    .posRow {
+        font-size: 1.5em;
+    }
+    aside h3 {
+        font-size: 1.8em;
+    }
+    h2.card-title {
+        font-size: 1.8em;
+        font-weight: 700;
+    }
+    p.card-text {
+        font-size: 1.3em;    
+    }
+}
+@media (min-width: 1200px) {
+    .posRow {
+        font-size: 1.5em;
+    }
+    h2.card-title {
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+    p.card-text {
+        font-size: 1.6em;    
+    }
+}
+@media (max-width: 1200px) {
+    h3.rsTitulo {
+        font-size: 1.8em;
+    }
+}

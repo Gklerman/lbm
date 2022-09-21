@@ -4,173 +4,263 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LBM - Liga de Básquetbol de Maldonado</title>
-    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <title>Document</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-    <div class="containerIndex">
+    <!-- header start -->
+    <header id="header">
+        <!-- Nav start -->
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center py-3 px-3">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.fw.png" class="navLogo" alt="Logo Liga Básquetbol de Maldonado">
+                </a>
+                <button class="navbar-toggler btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                    <ul class="navbar-nav mb-2 ms-auto mb-lg-0 d-flex list-unstyled">
+                        <li class="nav-item m-1 p-4"><a href="noticias.html">Noticias</a></li>
+                        <li class="nav-item m-1 p-4"><a href="fixture.html">Fixture</a></li>
+                        <li class="nav-item m-1 p-4"><a href="equipos.html">Equipos</a></li>
+                        <li class="nav-item m-1 p-4"><a href="historia.html">Historia</a></li>
+                        <li class="nav-item m-1 p-4"><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav end -->
 
-        <!-- header start -->
-        <header id="header">
-            <!-- Nav start -->
-            <nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center py-3 px-5">
-                <div class="container-fluid">
-                    <a href="index.html" class="navbar-brand">
-                        <img src="images/logo.fw.png" class="navLogo" alt="Logo Liga Básquetbol de Maldonado">
-                    </a>
-                    <button class="navbar-toggler btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-                        <ul class="navbar-nav mb-2 ms-auto mb-lg-0 d-flex list-unstyled">
-                            <li class="nav-item m-1 p-4"><a href="noticias.html">Noticias</a></li>
-                            <li class="nav-item m-1 p-4"><a href="fixture.html">Fixture</a></li>
-                            <li class="nav-item m-1 p-4"><a href="equipos.html">Equipos</a></li>
-                            <li class="nav-item m-1 p-4"><a href="historia.html">Historia</a></li>
-                            <li class="nav-item m-1 p-4"><a href="contacto.html">Contacto</a></li>
-                        </ul>
+        <!-- Carousel start -->
+        <div class="container mt-3">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators align-items-center">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/evento-triangular.jpg" class="d-block w-100 img-fluid" alt="Triangular Sub 14">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/second-comunidad.jpg" class="d-block w-100 img-fluid" alt="Nuestra comunidad">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/second-tiro-de-falta.jpg" class="d-block w-100 img-fluid" alt="Tiro de falta durante un partido de la liga">
                     </div>
                 </div>
-            </nav>
-            <!-- Nav end -->
-            
-            <!-- Carousel start -->
-            <div class="carouselContainer">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators align-items-center">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/evento-triangular.jpg" class="d-block w-100 img-fluid" alt="Triangular Sub 14">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/comunidad-basket.jpg" class="d-block w-100 img-fluid" alt="Nuestra comunidad">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/tiro-de-falta.jpg" class="d-block w-100 img-fluid" alt="Tiro de falta durante un partido de la liga">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </button>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
             </div>
-            <!-- Carousel end -->
-        </header>
-        <!-- Header end -->
-        
-        <section id="secondSection">
-            <div class="sectionContainer">
-                <div class="titularNoticias">
-                    <h1>LBM - Noticias importantes</h1>
-                </div>
-                <!-- Article start -->
-                <article class="noticia">
-                    <div class="noticiaImg">
-                        <img src="images/atenas_inferiores_basquetbol.jpg" alt="Club Atenas inferiores basquetbol">
-                    </div>
-                    <div class="noticiaTxt">
-                        <h2>Lorem ipsum dolor sit amet</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, quibusdam itaque. Repellendus ea praesentium possimus sequi illum sunt eos, voluptatibus ducimus ullam, quisquam placeat dolor corrupti distinctio omnis incidunt beatae, culpa consectetur voluptate consequuntur. Modi quas, error quae dolores sint dolorem, quidem itaque fugiat molestias deserunt ipsa necessitatibus voluptatibus optio!</p>
-                        <p class="fecha"><i>26 Agosto 2022</i></p>
-                    </div>
-                </article>
-                <!-- Article end -->
-                <!-- Article start -->
-                <article class="noticia">
-                    <div class="noticiaImg">
-                        <iframe width="280" height="221" src="https://www.youtube.com/embed/5F_HNvP0nZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="noticiaTxt">
-                        <h2>Lorem ipsum dolor sit amet</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, quibusdam itaque. Repellendus ea praesentium possimus sequi illum sunt eos, voluptatibus ducimus ullam, quisquam placeat dolor corrupti distinctio omnis incidunt beatae, culpa consectetur voluptate consequuntur. Modi quas, error quae dolores sint dolorem, quidem itaque fugiat molestias deserunt ipsa necessitatibus voluptatibus optio!</p>
-                        <p class="fecha"><i>26 Agosto 2022</i></p>
-                    </div>
-                </article>
-                <!-- Article end -->
-                <!-- Article start -->
-                <article class="noticia">
-                    <div class="noticiaImg">
-                        <img src="images/ateneo_piriapolis.jpg" alt="Club Ateneo Piriapolis">
-                    </div>
-                    <div class="noticiaTxt">
-                        <h2>Lorem ipsum dolor sit amet</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, quibusdam itaque. Repellendus ea praesentium possimus sequi illum sunt eos, voluptatibus ducimus ullam, quisquam placeat dolor corrupti distinctio omnis incidunt beatae, culpa consectetur voluptate consequuntur. Modi quas, error quae dolores sint dolorem, quidem itaque fugiat molestias deserunt ipsa necessitatibus voluptatibus optio!</p>
-                        <p class="fecha"><i>26 Agosto 2022</i></p>
-                    </div>
-                </article class="noticia">
-                <!-- Article end -->
-                <!-- Article start -->
-                <article class="noticia">
-                    <div class="noticiaImg">
-                        <iframe width="280" height="221" src="https://www.youtube.com/embed/sZLrrVWbALM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="noticiaTxt">
-                        <h2>Lorem ipsum dolor sit amet</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, quibusdam itaque. Repellendus ea praesentium possimus sequi illum sunt eos, voluptatibus ducimus ullam, quisquam placeat dolor corrupti distinctio omnis incidunt beatae, culpa consectetur voluptate consequuntur. Modi quas, error quae dolores sint dolorem, quidem itaque fugiat molestias deserunt ipsa necessitatibus voluptatibus optio!</p>
-                        <p class="fecha"><i>26 Agosto 2022</i></p>
-                    </div>
-                </article>
-                <!-- Article end -->
-                <!-- Article start -->
-                <article class="noticia">
-                    <div class="noticiaImg">
-                        <img src="images/san_carlos_vs_deportivo_maldonado.jpg" alt="San Carlos vs Deportivo Maldonado">
-                    </div>
-                    <div class="noticiaTxt">
-                        <h2>Lorem ipsum dolor sit amet</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, quibusdam itaque. Repellendus ea praesentium possimus sequi illum sunt eos, voluptatibus ducimus ullam, quisquam placeat dolor corrupti distinctio omnis incidunt beatae, culpa consectetur voluptate consequuntur. Modi quas, error quae dolores sint dolorem, quidem itaque fugiat molestias deserunt ipsa necessitatibus voluptatibus optio!</p>
-                        <p class="fecha"><i>26 Agosto 2022</i></p>
-                    </div>
-                </article>
-                <!-- Article end -->
+        </div>
+        <!-- Carousel end -->
+    </header>
+    <!-- Header end -->
+
+    <!-- Main start -->
+    <main class="row container mt-3 mx-auto">
+        <div class="row">
+            <div class="titularNoticias col-md-8">
+                <h1>LBM - Noticias importantes</h1>
             </div>
+            <div class="col-md-4"></div>
+        </div>
+        <!-- Section start -->
+        <section class="col-md-8">
+            <!-- Article start -->
+            <article>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/argentina-campeon-americup.jpg" class="img-fluid rounded-start" alt="Seleccionado Argentino de basquetbol recibiendo trofeo">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">ARGENTINA 75 BRASIL 73</h2>
+                                <p class="card-text">Argentina caía 73 a 71 con hundida de Delía y doble de Deck faltando 16 segundos paso al frente, Brasil no pudo en el...</p>
+                                <p class="card-text"><small class="text-muted">12 de setiembre, 2022</small></p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </article>
+            <!-- Article end -->
+            <!-- Article start -->
+            <article>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/video-reglas-basicas.jpg" class="img-fluid rounded-start" alt="Video sobre las reglas básicas en básquetbol">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Video - reglas básicas en básquetbol</h2>
+                                <p class="card-text">La primera versión del basquetbol tenía 13 reglas. La mayoría fue modificada pero algunas siguen vigentes, como...</p>
+                                <p class="card-text"><small class="text-muted">12 de Setiembre, 2022</small></p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </article>
+            <!-- Article end -->
+            <!-- Article start -->
+            <article>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/atenas-inferiores.jpg" class="img-fluid rounded-start" alt="Amistoso en formativas entre Atenas y Deportivo Maldonado">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Amistoso vs Deportivo Maldonado</h2>
+                                <p class="card-text">El Sábado 3 de Setiembre en el gimnasio cerrado de Atenas, se disputaron amistosos de Básquet vs Deportivo Maldonado en...</p>
+                                <p class="card-text"><small class="text-muted">5 de Setiembre, 2022</small></p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </article>
+            <!-- Article end -->
+            <!-- Article start -->
+            <article>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/video-mecanica-tiro.jpg" class="img-fluid rounded-start" alt="Video sobre la mecánica del tiro">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Video - la mecánica del tiro</h2>
+                                <p class="card-text">El brazo de tiro debe quedar totalmente extendido hasta que el balón entre por el aro. La palma de la mano debe terminar...</p>
+                                <p class="card-text"><small class="text-muted">3 de Setiembre, 2022</small></p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </article>
+            <!-- Article end -->
+            <!-- Article start -->
+            <article>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/ateneo.jpg" class="img-fluid rounded-start" alt="Plantel de Ateneo de Piriápolis campeón del Súper 4">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Ateneo festejó el Súper 4</h2>
+                                <p class="card-text">Ateneo venció en la final a Albion y festejó el título del Súper 4 de básquetbol de Primera División, que permitió a los...</p>
+                                <p class="card-text"><small class="text-muted">29 de Agosto, 2022</small></p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </article>
+            <!-- Article end -->
         </section>
         <!-- Section end -->
-
         <!-- Aside start -->
-        <aside id="columnDer">
+        <aside class="col-md-4">
             <div class="resultados">
-                <div class="rsTitulo rsColor">
+                <div class="rsTitulo d-flex justify-content-center align-items-center">
                     <h3>Resultados de la Fecha</h3>
                 </div>
+                <div>
+                    
+                </div>
             </div>
-            <div class="redesSociales">
-                <div class="rsTitulo">
+            <div class="redesSociales mt-3">
+                <div class="rsTitulo d-flex justify-content-center align-items-center">
                     <h3>Redes Sociales</h3>
                 </div>
                 <a href="#" class="fa fa-facebook-official" style="font-size: 40px;" title="Facebook"></a>
                 <a href="#" class="fa fa-twitter" style="font-size: 40px;" title="Twitter"></a>
             </div>
-            <div class="posiciones">
-                <div class="rsTitulo rsColor">
+            <div class="posiciones mt-3">
+                <div class="rsTitulo d-flex justify-content-center align-items-center">
                     <h3>Tabla de Posiciones</h3>
+                </div>
+                <div class="posRow row justify-content-end">
+                    <div class="col-1 rsColor">POS</div>
+                    <div class="col-3 rsColor">EQUIPO</div>
+                    <div class="col-2 rsColor">PJ</div>
+                    <div class="col-2 rsColor">PG</div>
+                    <div class="col-2 rsColor">PP</div>
+                    <div class="col-2 rsColor">PTS</div>    
+                </div>
+                <div class="posRow row justify-content-end">
+                    <div class="col-1">1</div>
+                    <div class="col-3">San Carlos</div>
+                    <div class="col-2">1</div>
+                    <div class="col-2">1</div>
+                    <div class="col-2">0</div>
+                    <div class="col-2">2</div>    
+                </div>
+                <div class="posRow row justify-content-end">
+                    <div class="col-1 rowColor">2</div>
+                    <div class="col-3 rowColor">Deportivo</div>
+                    <div class="col-2 rowColor">1</div>
+                    <div class="col-2 rowColor">1</div>
+                    <div class="col-2 rowColor">0</div>
+                    <div class="col-2 rowColor">2</div>    
+                </div>
+                <div class="posRow row justify-content-end">
+                    <div class="col-1">3</div>
+                    <div class="col-3">LHHC</div>
+                    <div class="col-2">1</div>
+                    <div class="col-2">1</div>
+                    <div class="col-2">0</div>
+                    <div class="col-2">2</div>    
+                </div>
+                <div class="posRow row justify-content-end">
+                    <div class="col-1 rowColor">4</div>
+                    <div class="col-3 rowColor">Ateneo</div>
+                    <div class="col-2 rowColor">1</div>
+                    <div class="col-2 rowColor">0</div>
+                    <div class="col-2 rowColor">1</div>
+                    <div class="col-2 rowColor">1</div>    
+                </div>
+                <div class="posRow row justify-content-end">
+                    <div class="col-1">5</div>
+                    <div class="col-3">Albion</div>
+                    <div class="col-2">1</div>
+                    <div class="col-2">0</div>
+                    <div class="col-2">1</div>
+                    <div class="col-2">1</div>    
+                </div>
+                <div class="posRow row justify-content-end">
+                    <div class="col-1 rowColor">6</div>
+                    <div class="col-3 rowColor">Atenas</div>
+                    <div class="col-2 rowColor">1</div>
+                    <div class="col-2 rowColor">0</div>
+                    <div class="col-2 rowColor">1</div>
+                    <div class="col-2 rowColor">1</div>    
                 </div>
             </div>
         </aside>
         <!-- Aside end -->
+    </main>
+    <!-- Main end -->
 
-        <!-- Footer start -->
-        <footer id="footer">
-            <p>Copyright &copy; LBM.COM, 2000-2022</p>
-        </footer>
-        <!-- Footer end -->
-
-    </div>
+    <!-- Footer start -->
+    <footer class="footer mt-3 d-flex justify-content-center align-items-center">
+        <p>Copyright &copy; LBM.COM, 2000-2022</p>
+    </footer>
+    <!-- Footer end -->
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
     
 </body>
 </html>
