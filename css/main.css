@@ -105,7 +105,7 @@ img {
 }
 
 article {
-  box-shadow: 2px 2px 3px #888888;
+  box-shadow: 2px 2px 3px #888;
 }
 article h2 {
   font-size: 2.5em;
@@ -113,44 +113,6 @@ article h2 {
 }
 article p {
   font-size: 1.8em;
-}
-
-#equipos {
-  width: 100%;
-}
-
-.titularEquipos {
-  max-width: 1200px;
-  border-bottom: 1px solid #CCC;
-}
-.titularEquipos h1 {
-  padding: 5px;
-  font-size: 3em;
-  font-weight: 700;
-}
-
-.infoEquipos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 10px;
-  font-size: 1.5em;
-}
-
-#secondContainer {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 15px;
-  display: flex;
-  flex-direction: row;
-}
-
-.cardEquipo {
-  width: 300px;
-  height: auto;
-  margin: 10px 0 10px 10px;
-  border: 1px solid #CCC;
 }
 
 /* --- ASIDE --- */
@@ -314,6 +276,264 @@ aside h3 {
   font-size: 1.5em;
 }
 
+/* --- SECTION NOTICIAS.HTML --- */
+.noticiaPrincipal p {
+  font-size: 1.8em;
+  padding: 5px;
+}
+
+.noticiaArticle {
+  margin-top: 20px;
+}
+
+#contNoticias h3 {
+  padding: 5px;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+#contNoticias p {
+  padding: 0px 5px;
+  font-size: 1.5em;
+}
+
+/* --- EQUIPOS --- */
+#equipos {
+  width: 100%;
+}
+
+.titularEquipos {
+  max-width: 1200px;
+  border-bottom: 1px solid #CCC;
+}
+.titularEquipos h1 {
+  padding: 5px;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.infoEquipos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+#secondContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cardEquipo {
+  width: 300px;
+  height: auto;
+  margin: 10px 0 10px 10px;
+  border: 1px solid #CCC;
+}
+.cardEquipo a {
+  text-decoration: none;
+  color: #00488C;
+  font-weight: 700;
+}
+.cardEquipo a:hover {
+  text-decoration: underline;
+}
+.cardEquipo #dire {
+  font-size: 1em;
+  font-style: italic;
+  color: #888;
+}
+
+/* --- SECTION HISTORIA.HTML --- */
+.titularHistoria {
+  width: 100%;
+  border-bottom: 1px solid #CCC;
+}
+.titularHistoria h1 {
+  padding: 5px;
+  font-size: 3em;
+  font-weight: 700;
+}
+.titularHistoria h2 {
+  width: 100%;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 20px 0 0 10px;
+}
+
+.textoHistoria p {
+  font-size: 1.8em;
+  padding: 10px 10px 10px 20px;
+}
+
+.autoridades {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cardAutoridades {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 20px;
+  font-size: 1.5em;
+}
+
+/* --- GALERIA --- */
+.galeria {
+  width: 100%;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  grid-template-areas: "staples staples juez comu" "tiro balones juez league";
+  gap: 10px;
+}
+
+.staples {
+  grid-area: staples;
+}
+
+.juez {
+  grid-area: juez;
+}
+
+.comunidad {
+  grid-area: comu;
+}
+
+.tiro {
+  grid-area: tiro;
+}
+
+.balones {
+  grid-area: balones;
+}
+
+.league {
+  grid-area: league;
+}
+
+.galeria img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+}
+
+.galeria img:hover {
+  filter: none;
+}
+
+/* --- FORMULARIO CONTACTO.HTML --- */
+.formInfo {
+  width: auto;
+  text-align: left;
+  font-size: 1.8em;
+  padding: 10px 0 0 10px;
+}
+
+.formControl {
+  font-size: 1em;
+}
+.formControl:focus {
+  outline: none !important;
+  border: 2px solid #E88D0B;
+  border-radius: 4px;
+}
+
+::-moz-placeholder {
+  color: #CCC;
+}
+
+:-ms-input-placeholder {
+  color: #CCC;
+}
+
+::placeholder {
+  color: #CCC;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 10px 14px;
+  box-sizing: border-box;
+  border: 2px solid #CCC;
+  border-radius: 4px;
+}
+
+input.inputCheckbox {
+  transform: scale(1.5);
+  margin: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #CCC;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #CCC;
+  border-radius: 4px;
+  resize: none;
+}
+textarea:focus {
+  outline: none !important;
+  border: 3px solid #E88D0B;
+  border-radius: 4px;
+}
+
+.inputTextarea {
+  font-size: 1em;
+}
+
+button[type=reset] {
+  width: 100%;
+  padding: 16px 0;
+  background-color: #E88D0B;
+  border: none;
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button[type=submit] {
+  width: 100%;
+  padding: 16px 0;
+  background-color: #04aa6d;
+  border: none;
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.map {
+  width: auto;
+  margin: 10px 0 20px 10px;
+}
+.map iframe {
+  width: 500px;
+  height: 500px;
+  border: 0;
+}
+
 /* --- RESPONSIVE --- */
 @media (max-width: 992px) {
   h2.card-title {
@@ -351,7 +571,7 @@ aside h3 {
     font-weight: 700;
   }
   p.card-text {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 }
 @media (max-width: 1200px) {

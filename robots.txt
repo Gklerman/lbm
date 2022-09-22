@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /js/fresco.min.js/
+
+Sitemap: https://gklerman.github.io/lbm/sitemap.xml

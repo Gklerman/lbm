@@ -1,0 +1,85 @@
+/* --- FORMULARIO CONTACTO.HTML --- */
+.formInfo {
+    width: auto;
+    text-align: left;
+    font-size: $textLg;
+    padding: 10px 0 0 10px;
+}
+.formControl {
+    font-size: $textSm;
+    &:focus {
+        outline: none !important;
+        border: 2px solid $secondaryColor;
+        border-radius: 4px;    
+    }
+}
+::placeholder {
+    color: $grey;
+}
+
+label {
+    display: $dFlex;
+    align-items: $aItemsCenter;
+}
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 10px 14px;
+    box-sizing: border-box;
+    border: 2px solid $grey;
+    border-radius: 4px;
+}
+input.inputCheckbox {
+    transform: scale(1.5);
+    margin: 20px;
+}
+select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid $grey;
+    border-radius: 4px;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid $grey;
+    border-radius: 4px;
+    resize: none;
+    &:focus {
+        outline: none !important;
+        border: 3px solid $secondaryColor;
+        border-radius: 4px;
+    } 
+}
+.inputTextarea {
+    font-size: $textSm;    
+}
+    button[type=reset] {
+        width: 100%;
+        padding: 16px 0;
+        background-color: $secondaryColor;
+        border: none;
+        color: $keyColor;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    button[type=submit] {
+        width: 100%;
+        padding: 16px 0;
+        background-color: $btnColor;
+        border: none;
+        color: $keyColor;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.map {
+    width: auto;
+    margin: 10px 0 20px 10px;
+    iframe {
+        width: 500px;
+        height: 500px; 
+        border: 0;   
+    }
+}

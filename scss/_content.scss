@@ -17,7 +17,7 @@ html {
 
 /* --- BODY --- */
 body {
-    background-color: $bgColor;
+    background-color: map-get($map: $esquemaColor, $key: 'cinco');
 }
 img {
     width: 100%;
@@ -55,44 +55,13 @@ img {
 }
 
 article {
-    box-shadow: 2px 2px 3px #888888;
+    box-shadow: 2px 2px 3px map-get($map: $esquemaColor, $key: 'tres');
     h2 {
         @include font(2.5em,$textBold);  
     }
     p {
         font-size: $textLg;
     }  
-}
-
-
-#equipos {
-    width: 100%;   
-}
-.titularEquipos {
-    max-width: 1200px;
-    border-bottom: 1px solid $grey;
-    h1 {
-        padding: 5px;
-        @include font($textXxl,$textBold);    
-    }
-}
-.infoEquipos {
-    @include flex(row,center,wrap);
-    margin-top: 10px;
-    font-size: $textMd;
-}
-#secondContainer {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 15px;
-    display: $dFlex;
-    flex-direction: $fDirectionRow;
-}
-.cardEquipo {
-    width: 300px;
-    height: auto;
-    margin: 10px 0 10px 10px;
-    border: 1px solid $grey;
 }
 
 /* --- ASIDE --- */
@@ -117,7 +86,7 @@ aside h3 {
 }
 .fa-facebook-official, .fa-twitter {
     font-size: 30px;
-    color: $grey;
+    color: map-get($map: $esquemaColor, $key: 'cuatro');
     text-decoration: none;
     padding: 5px;
     &:hover {
@@ -168,11 +137,11 @@ aside h3 {
 @keyframes sombra {
     0% {
         transform: translateY(0);
-        box-shadow: 5px 5px 10px #000;
+        box-shadow: 5px 5px 10px map-get($map: $esquemaColor, $key: 'ocho');
     }
     100% {
         transform: translateY(-220px);
-        box-shadow: 10px 55px 55px #444466;
+        box-shadow: 10px 55px 55px map-get($map: $esquemaColor, $key: 'siete');
     }
 }
 @keyframes rebote {
@@ -200,7 +169,7 @@ aside h3 {
     height: 80px;
     background-color: $mainColor;
     p {
-        color: $grey;
+        color: map-get($map: $esquemaColor, $key: 'cuatro');
         font-size: $textMd;    
     }
 }

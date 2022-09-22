@@ -1,0 +1,72 @@
+/* --- SECTION HISTORIA.HTML --- */
+.titularHistoria {
+    width: 100%;
+    border-bottom: 1px solid $grey;
+    h1 {
+        padding: 5px;
+        font-size: $textXxl;
+        font-weight: $textBold;    
+    }
+    h2 {
+        width: 100%;
+        font-size: 2.5em;
+        font-weight: $textBold;
+        margin: 20px 0 0 10px;    
+    }
+}
+.textoHistoria p {
+    font-size: $textLg;
+    padding: 10px 10px 10px 20px;
+}
+.autoridades {
+    width: 100%;
+    display: $dFlex;
+    flex-direction: $fDirectionRow;
+    justify-content: $jContentCenter;
+}
+.cardAutoridades {
+    display: $dFlex;
+    flex-direction: $fDirectionColumn;
+    margin: 20px 0 0 20px;
+    font-size: $textMd;   
+}
+
+/* --- GALERIA --- */
+.galeria {
+    width: 100%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,300px);
+    grid-template-areas: 
+    "staples staples juez comu"
+    "tiro balones juez league";
+    gap: 10px;
+}
+.staples {
+    grid-area: staples;
+}
+.juez {
+    grid-area: juez;
+}
+.comunidad {
+    grid-area: comu;
+}
+.tiro {
+    grid-area: tiro;
+}
+.balones {
+    grid-area: balones;
+}
+.league {
+    grid-area: league;
+}
+.galeria img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+}
+.galeria img:hover {
+    filter: none;
+}

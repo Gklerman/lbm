@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LBM - Liga de Básquetbol de Maldonado</title>
+    <title>Contacto - Liga de Básquetbol de Maldonado</title>
+    
+    <meta name="description" content="Completando este formulario podrás comunicarte con nosotros.">
+    <meta name="keywords" content="lbm contacto, contacto liga de basquetbol, liga de basquetbol de maldonado contacto, liga basquetbol maldonado contacto, contacto basquetbol maldonado, contacto liga de basket, contacto liga de basketball de maldonado, basket maldonado contacto, basketball maldonado contacto, maldonado basquetbol contacto, contacto maldonado basket, contacto maldonado basketball">
+    <meta name="copyright" content="Liga de Básquetbol de Maldonado">
+    <meta name="author" content="Germán Araujo">
+
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
@@ -40,12 +46,15 @@
     <!-- Container start -->
     <div id="secondContainer">
         <!-- Section start -->
-        <section>
-            <div class="titularNoticias">
-                <h1>Contacto</h1>
+        <section class="row container mt-3 mx-auto">
+            <div class="row">
+                <div class="titularNoticias col-md-6">
+                    <h1>Contacto</h1>
+                </div>
+                <div class="col-md-6"></div>
             </div>
             <!-- Form start -->
-            <form>
+            <form class="col-md-6">
                 <div class="formInfo">   
                     <label for="nombre">Nombre</label>
                     <input type="text" id ="nombre" name="nombre" class="formControl" placeholder="Nombre" /><br><br>
@@ -81,16 +90,18 @@
             </form>
             <!-- Too many br´s, I know I know... ;) -->
             <!-- Form end -->
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26176.18059355309!2d-54.98119661753965!3d-34.90588299966101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95751a97c925fab1%3A0x4c3ae595519715fd!2s20000%20Maldonado%2C%20Departamento%20de%20Maldonado!5e0!3m2!1ses-419!2suy!4v1659764957811!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26176.18059355309!2d-54.98119661753965!3d-34.90588299966101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95751a97c925fab1%3A0x4c3ae595519715fd!2s20000%20Maldonado%2C%20Departamento%20de%20Maldonado!5e0!3m2!1ses-419!2suy!4v1659764957811!5m2!1ses-419!2suy" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            </section>
+        </section>
         <!-- Section end -->
     </div>
     <!-- Container end -->
 
+    <div id="empty"></div>
+
     <!-- Footer start -->
-    <footer>
+    <footer class="footer mt-3 d-flex justify-content-center align-items-center">
         <p>Copyright &copy; LBM.COM, 2000-2022</p>
     </footer>
     <!-- Footer end -->

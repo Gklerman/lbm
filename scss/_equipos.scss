@@ -1,0 +1,43 @@
+/* --- EQUIPOS --- */
+#equipos {
+    width: 100%;   
+}
+.titularEquipos {
+    max-width: 1200px;
+    border-bottom: 1px solid map-get($map: $esquemaColor, $key: 'cuatro');
+    h1 {
+        padding: 5px;
+        @include font($textXxl,$textBold);    
+    }
+}
+.infoEquipos {
+    @include flex(row,center,wrap);
+    margin-top: 10px;
+    font-size: $textMd;
+}
+#secondContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 15px;
+    display: $dFlex;
+    flex-direction: $fDirectionRow;
+}
+.cardEquipo {
+    width: 300px;
+    height: auto;
+    margin: 10px 0 10px 10px;
+    border: 1px solid map-get($map: $esquemaColor, $key: 'cuatro');
+    a {
+        text-decoration: none;
+        color: $mainColor;
+        font-weight: $textBold;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    #dire {
+        font-size: $textSm;
+        font-style: italic;
+        color: $shadowColor;
+    }
+}

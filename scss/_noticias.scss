@@ -1,0 +1,21 @@
+/* --- SECTION NOTICIAS.HTML --- */
+.noticiaPrincipal {
+    p {
+        font-size: $textLg;
+        padding: 5px;
+    }
+}
+.noticiaArticle {
+    margin-top: 20px;
+}
+#contNoticias {
+    h3 {
+        padding: 5px;
+        font-size: 1.6em; 
+        font-weight: $textBold;   
+    }
+    p {
+        padding: 0px 5px;
+        font-size: $textMd; 
+    }   
+}

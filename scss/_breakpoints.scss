@@ -2,8 +2,8 @@
 /* --- RESPONSIVE --- */
 @media (max-width: 992px) {
     h2.card-title {
-        font-size: 1.5em;
-        font-weight: 700;
+        font-size: $textMd;
+        font-weight: $textBold;
     }
     p.card-text {
         font-size: 1.3em;
@@ -14,14 +14,14 @@
 }
 @media (min-width: 992px) {
     .posRow {
-        font-size: 1.5em;
+        font-size: $textMd;
     }
     aside h3 {
-        font-size: 1.8em;
+        font-size: $textLg;
     }
     h2.card-title {
-        font-size: 1.8em;
-        font-weight: 700;
+        font-size: $textLg;
+        font-weight: $textBold;
     }
     p.card-text {
         font-size: 1.3em;    
@@ -29,18 +29,17 @@
 }
 @media (min-width: 1200px) {
     .posRow {
-        font-size: 1.5em;
+        font-size: $textMd;
     }
     h2.card-title {
-        font-size: 2.5em;
-        font-weight: 700;
+        @include font(2.5em,$textBold);
     }
     p.card-text {
-        font-size: 1.6em;    
+        font-size: $textMd;    
     }
 }
 @media (max-width: 1200px) {
     h3.rsTitulo {
-        font-size: 1.8em;
+        font-size: $textLg;
     }
 }
