@@ -283,7 +283,7 @@ aside h3 {
 }
 
 .noticiaArticle {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #contNoticias h3 {
@@ -292,8 +292,40 @@ aside h3 {
   font-weight: 700;
 }
 #contNoticias p {
-  padding: 0px 5px;
+  padding: 0px 10px;
   font-size: 1.5em;
+}
+
+/* --- SECTION FIXTURE.HTML --- */
+.titularFixture {
+  width: 100%;
+  border-bottom: 1px solid #CCC;
+}
+.titularFixture h1 {
+  padding: 5px;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.info {
+  margin: 10px 0;
+  background-color: #00488C;
+  color: #FFF;
+}
+
+.fixtureData {
+  height: auto;
+  margin: 0;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 700;
+}
+h3 span {
+  color: #E88D0B;
 }
 
 /* --- EQUIPOS --- */
@@ -378,57 +410,10 @@ aside h3 {
 }
 
 .cardAutoridades {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0 0 20px;
+  width: 180px;
+  height: auto;
+  margin: 20px 5px 5px 0px;
   font-size: 1.5em;
-}
-
-/* --- GALERIA --- */
-.galeria {
-  width: 100%;
-  margin: 20px 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 300px);
-  grid-template-areas: "staples staples juez comu" "tiro balones juez league";
-  gap: 10px;
-}
-
-.staples {
-  grid-area: staples;
-}
-
-.juez {
-  grid-area: juez;
-}
-
-.comunidad {
-  grid-area: comu;
-}
-
-.tiro {
-  grid-area: tiro;
-}
-
-.balones {
-  grid-area: balones;
-}
-
-.league {
-  grid-area: league;
-}
-
-.galeria img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-  filter: grayscale(1);
-}
-
-.galeria img:hover {
-  filter: none;
 }
 
 /* --- FORMULARIO CONTACTO.HTML --- */
@@ -535,6 +520,44 @@ button[type=submit] {
 }
 
 /* --- RESPONSIVE --- */
+@media (min-width: 768px) {
+  .galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: "staples staples juez comu" "tiro balones juez league";
+    gap: 5px 10px;
+  }
+  .staples {
+    grid-area: staples;
+  }
+  .juez {
+    grid-area: juez;
+  }
+  .comunidad {
+    grid-area: comu;
+  }
+  .tiro {
+    grid-area: tiro;
+  }
+  .balones {
+    grid-area: balones;
+  }
+  .league {
+    grid-area: league;
+  }
+  .galeria img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+  }
+  .galeria img:hover {
+    filter: none;
+  }
+}
 @media (max-width: 992px) {
   h2.card-title {
     font-size: 1.5em;

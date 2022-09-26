@@ -1,0 +1,28 @@
+/* --- SECTION FIXTURE.HTML --- */
+.titularFixture {
+    width: 100%;
+    border-bottom: 1px solid $grey;
+    h1 {
+        padding: 5px;
+        font-size: $textXxl;
+        font-weight: $textBold;
+    }
+}
+.info {
+    margin: 10px 0;
+    background-color: $mainColor;
+    color: $keyColor;    
+}
+.fixtureData {
+    height: auto;
+    margin: 0;
+    background-color: $keyColor;
+    border: 1px solid $grey;
+}
+h3 {
+    font-size: $textXl;
+    font-weight: $textBold;
+    span {
+        color: $secondaryColor;
+    }    
+}

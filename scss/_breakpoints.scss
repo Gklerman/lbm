@@ -1,5 +1,44 @@
 
 /* --- RESPONSIVE --- */
+@media (min-width: 768px) {
+    .galeria {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,300px);
+        grid-template-areas: 
+        "staples staples juez comu"
+        "tiro balones juez league";
+        gap: 5px 10px;
+    }
+    .staples {
+        grid-area: staples;
+    }
+    .juez {
+        grid-area: juez;
+    }
+    .comunidad {
+        grid-area: comu;
+    }
+    .tiro {
+        grid-area: tiro;
+    }
+    .balones {
+        grid-area: balones;
+    }
+    .league {
+        grid-area: league;
+    }
+    .galeria img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: grayscale(1);
+        &:hover {
+            filter: none;    
+        }
+    }
+}
 @media (max-width: 992px) {
     h2.card-title {
         font-size: $textMd;
@@ -10,7 +49,7 @@
     }
     .card-body {
         padding: 3px;
-    }  
+    }
 }
 @media (min-width: 992px) {
     .posRow {
