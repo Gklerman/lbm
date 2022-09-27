@@ -1,5 +1,24 @@
 
 /* --- RESPONSIVE --- */
+@media (min-width: 576px) {
+    .resultadosFecha {
+        height: auto;
+        margin: 0;
+        padding: 5px;
+        border-bottom: 1px solid $grey;
+        .equipoA, .equipoB {
+            @include font($textMd,$textBold);
+        }
+        .resA span {
+            @include font($textXxxl,$textBold);
+            color: map-get($map: $esquemaColor, $key: 'nueve'); 
+        }
+        .resB span {
+            @include font($textXxxl,$textBold);
+            color: map-get($map: $esquemaColor, $key: 'cuatro');    
+        }
+    }
+}
 @media (min-width: 768px) {
     .galeria {
         width: 100%;

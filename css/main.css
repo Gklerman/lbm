@@ -145,7 +145,7 @@ aside h3 {
 }
 
 .fa-facebook-official, .fa-twitter {
-  font-size: 30px;
+  font-size: 40px;
   color: #CCC;
   text-decoration: none;
   padding: 5px;
@@ -520,6 +520,28 @@ button[type=submit] {
 }
 
 /* --- RESPONSIVE --- */
+@media (min-width: 576px) {
+  .resultadosFecha {
+    height: auto;
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid #CCC;
+  }
+  .resultadosFecha .equipoA, .resultadosFecha .equipoB {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  .resultadosFecha .resA span {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #04aa6d;
+  }
+  .resultadosFecha .resB span {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #CCC;
+  }
+}
 @media (min-width: 768px) {
   .galeria {
     width: 100%;

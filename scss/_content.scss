@@ -79,13 +79,14 @@ aside h3 {
 .rowColor{
     background-color: $keyColor;
 }
+
 .posRow {
     width: 100%;
     margin: 0 auto;
     @include font(1.6em,600);
 }
 .fa-facebook-official, .fa-twitter {
-    font-size: 30px;
+    font-size: 40px;
     color: map-get($map: $esquemaColor, $key: 'cuatro');
     text-decoration: none;
     padding: 5px;
