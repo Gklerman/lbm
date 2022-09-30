@@ -175,3 +175,28 @@ aside h3 {
     }
 }
 
+/* --- ERROR PAGE --- */
+.error-page-container {
+    background-color: map-get($map: $esquemaColor, $key: 'diez');
+}
+.error-page-img { 
+    max-width: 719px;   
+    max-height: 687px;
+}
+.error-page-btn {
+    width: 50%;
+    margin: 40px auto;
+    padding: 16px 0;
+    background-color: $btnColor;
+    border: none;
+    cursor: pointer;
+    a {
+        font-size: $textXl;
+        color: $keyColor;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;   
+        }
+    }
+
+}

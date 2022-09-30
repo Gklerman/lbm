@@ -276,6 +276,33 @@ aside h3 {
   font-size: 1.5em;
 }
 
+/* --- ERROR PAGE --- */
+.error-page-container {
+  background-color: #FA6B5D;
+}
+
+.error-page-img {
+  max-width: 719px;
+  max-height: 687px;
+}
+
+.error-page-btn {
+  width: 50%;
+  margin: 40px auto;
+  padding: 16px 0;
+  background-color: #04aa6d;
+  border: none;
+  cursor: pointer;
+}
+.error-page-btn a {
+  font-size: 2em;
+  color: #FFF;
+  text-decoration: none;
+}
+.error-page-btn a:hover {
+  text-decoration: underline;
+}
+
 /* --- SECTION NOTICIAS.HTML --- */
 .noticiaPrincipal p {
   font-size: 1.8em;
